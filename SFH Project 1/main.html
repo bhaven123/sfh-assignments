@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Halifax Canoe and Kayak</title>
+        <link rel="stylesheet" href="main.css" />
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".menu").hide();
+                $(".ham").click(function() {
+                    $(".menu").fadeToggle("slow");
+                })
+                
+            })
+        </script>  
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><img src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/hamburger.png" alt="Hamburger Icon" class="ham" /></li>
+                    <li>Halifax Canoe and Kayak</li>
+                    <li><img src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/paddle-white.png" alt="Logo" /></li>
+                </ul>    
+            </nav>
+        </header>
+        <div class="menu">
+                <ul class="menu-listing">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Book Trip</a></li>
+                    <li><a href="#">Admin Login</a></li>
+                </ul>  
+        </div>
+        <div class="container">
+            <div>
+                <img src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/canoe.jpg" alt="Canoe" />
+                <h1>Upcoming Adventures</h1> 
+            </div> 
+            <section>
+                <h2>Halifax</h2>
+                <ul>
+                    <li>Date: 2017-04-12</li>
+                    <li>Duration: 4 days</li>
+                </ul>
+                <h3>Summary</h3>
+                <p>Looking to experience the wonders of the Nahanni, But pressed for time? This expedition takes you to the heart
+                    of Nahanni National Park where you will paddle past dazzling mountain ranges, experience the Tufa Mounds at Rabbitkettle 
+                    Lake and finish the trip at Náįlįcho (Virginia Falls). 6 days allows for some time to hike and explore the surrounding landscape, 
+                    finding what secrets the Nahanni may hold up its hidden valleys. This stretch of the Nahanni is calm and relaxing, and ending your 
+                    journey at thundering Virginia Falls and experiencing their magic without having to make the 1.5km portage around them and face 
+                    the class 2-3 rapids downstream make this a perfect trip for people of all skill levels to join a wilderness experience like 
+                    nowhere else on earth.
+                </p>            
+            </section>
+            <section>
+                <h2>Sydney</h2>
+                <ul>
+                    <li>Date: 2017-05-10</li>
+                    <li>Duration: 2 days</li>
+                </ul>
+                <h3>Summary</h3>
+                <p>Looking to experience the wonders of the Nahanni, But pressed for time? This expedition takes you to the heart
+                of Nahanni National Park where you will paddle past dazzling mountain ranges, experience the Tufa Mounds at Rabbitkettle 
+                Lake and finish the trip at Náįlįcho (Virginia Falls). 6 days allows for some time to hike and explore the surrounding landscape, 
+                finding what secrets the Nahanni may hold up its hidden valleys. This stretch of the Nahanni is calm and relaxing, and ending your 
+                journey at thundering Virginia Falls and experiencing their magic without having to make the 1.5km portage around them and face 
+                the class 2-3 rapids downstream make this a perfect trip for people of all skill levels to join a wilderness experience like 
+                nowhere else on earth.
+                </p>
+            </section>
+        </div>
+    </body>
+</html>
