@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Halifax Canoe and Kayak</title>
         <link rel="stylesheet" href="main.css" />
-       
+        <!-- Loading JQuery CDN -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!--Writing JQuery functions to handle toggling when clicked on hamburger menu icon-->
         <script>
             $(document).ready(function() {
                 $(".menu").hide();
@@ -27,19 +28,19 @@
                 </ul>    
             </nav>
         </header>
-        <div class="menu">
-                <ul class="menu-listing">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Book Trip</a></li>
-                    <li><a href="#">Admin Login</a></li>
-                </ul>  
+        <!--Creating Hamburger Menu List-->
+        <div class="menu">     
+            <a href="#">Home</a>
+            <a href="#">Book Trip</a>
+            <a href="#">Admin Login</a>  
         </div>
         <div class="container">
-            <div>
+            <div class="image-container">
                 <img src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/canoe.jpg" alt="Canoe" />
-                <h1>Upcoming Adventures</h1> 
+                <div class="centered">Come Experience Canada</div>
             </div> 
-            <section>
+            <h1>Upcoming Adventures</h1> 
+            <section class="summary">
                 <h2>Halifax</h2>
                 <ul>
                     <li>Date: 2017-04-12</li>
@@ -55,7 +56,7 @@
                     nowhere else on earth.
                 </p>            
             </section>
-            <section>
+            <section class="summary">
                 <h2>Sydney</h2>
                 <ul>
                     <li>Date: 2017-05-10</li>
