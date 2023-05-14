@@ -1,14 +1,13 @@
 <?php
-include 'header.php';
 include 'db_connection.php';
 // Adding form data to the database
 $conn = openConn();
-$headingData = $_POST["heading"];
-$tripDateData = $_POST["date"];
-$durationData = $_POST["duration"];
-$summaryData = $_POST["summary"];
-$sql = "INSERT INTO adventures(id, heading, tripDate, duration, summary) values (NULL, '$headingData', '$tripDateData', '$durationData', '$summaryData')";
-if(count($_POST) > 0){
+if(isset($_POST["heading"]) and isset($_POST["date"]) and isset($_POST["duration"]) and isset($_POST["summary"])){
+    $headingData = $_POST["heading"];
+    $tripDateData = $_POST["date"];
+    $durationData = $_POST["duration"];
+    $summaryData = $_POST["summary"];
+    $sql = "INSERT INTO adventures(id, heading, tripDate, duration, summary) values (NULL, '$headingData', '$tripDateData', '$durationData', '$summaryData')";
     if($conn->query($sql) === TRUE){
         header("Location: admin-confirm.php");
     }
@@ -20,6 +19,7 @@ closeConn($conn);
 ?>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Creating the form for adding data -->
+<?php include 'header.php';?>
 <div class="d-flex flex-column m-auto align-items-center bg-light bg-gradient">
     <h1 class="display-3">Admin - Add Adventure</h1>
     <hr>
