@@ -1,4 +1,4 @@
-# About the Project
+## About the Project
 
 This respository involves TA assignments part of the Skills for Hire Web Development Program provided by Digital Nova Scotia.
 
@@ -50,5 +50,3 @@ To run this project you will need:
 ##### Demo
 
 https://github.com/bhaven123/sfh-assignments/assets/47035211/21028a7e-472d-4300-b031-c743219ddc37
-
-
